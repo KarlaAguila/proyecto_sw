@@ -1,0 +1,4 @@
+user:equipo3
+password:3quip03
+host:localhost
+database:tiendita
