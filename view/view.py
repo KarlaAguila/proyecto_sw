@@ -4,14 +4,19 @@ class View:
         print('=   STOCK DE PRODUCTOS   =')
         print('==========================')
 
+    def end(self):
+        print('==========================')
+        print('=          BYE           =')
+        print('==========================')       
 
     def main_menu(self):
-        print('==========================')
+        print('==== ======================')
         print('=      MENU PRINCIPAL    =')
         print('==========================')
         print('1.Productos')  
         print('2.Clientes')  
         print('3. Corte de caja')  
+        print('4. Salir')
     
     def option(self, last):
         print('Selecciona una opción (1-'+last+'):', end = '')
@@ -36,7 +41,7 @@ class View:
         print('+'*(len(err)+4))
 
 
-    def producto_menu(self):
+    def productos_menu(self):
         print('==========================')
         print('=      PRODUCTOS         =')
         print('==========================')
@@ -66,7 +71,7 @@ class View:
     def show_producto_footer(self):
         print('*'*48)
 
-    def clienteConsentido_menu(self):
+    def clientesConsentidos_menu(self):
         print('==========================')
         print('=  CLIENTES CONSENTIDOS  =')
         print('==========================')

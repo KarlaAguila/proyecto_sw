@@ -98,10 +98,10 @@ class Model:
 
     #MÉTODOS RELACIONADOS CON PRODUCTO
     #CREAR UN PRODUCTO
-    def create_producto(self, nombre_producto, stock, descripcion, precio, iva, imagen): 
+    def create_producto(self, nombre_producto, stock, descripcion, precio, iva): 
         try:
-            sql = 'INSERT INTO producto (`nombre_producto`, `stock`, `descripcion`, `precio`, `iva`, `imagen`) VALUES (%s, %s, %s, %s, %s, %s)'
-            vals = (nombre_producto, stock, descripcion, precio, iva, imagen)
+            sql = 'INSERT INTO producto (`nombre_producto`, `stock`, `descripcion`, `precio`, `iva`) VALUES (%s, %s, %s, %s, %s)'
+            vals = (nombre_producto, stock, descripcion, precio, iva)
             self.cursor.execute(sql, vals)
             self.cnx.commit() #confirmar cambios dentro de bd
             return True
